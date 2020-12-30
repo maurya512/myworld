@@ -1,11 +1,12 @@
 // posts component
 import React from 'react'
 
-function Posts() {
-    return (
-        <div>
+import useStyles from './styles';
 
-        </div>
+function Posts() {
+    const classes = useStyles();
+    return (
+        <h1>Posts</h1>
     )
 }
 
