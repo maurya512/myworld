@@ -9,12 +9,17 @@ import myworld from './images/myworld.png'
 // import components 
 import Form from './components/Form/Form';
 import Posts from './components/Posts/Posts';
+
+// import files
+import useStyles from './styles';
 const App = () => {
+    const classes = useStyles();
+
     return (
         <Container maxWidth='lg'>
-            <AppBar position='static' color='inherit'>
-                <Typography variant='h2' align='center'>My World</Typography>
-                <img src={myworld} alt='my world' height='60' />
+            <AppBar className={classes.appBar} position='static' color='inherit'>
+                <Typography className={classes.heading}variant='h2' align='center'></Typography>
+                <img className = {classes.myworld} src={myworld} alt='my world' height='150' />
             </AppBar>
             <Grow in>
                 <Container>
